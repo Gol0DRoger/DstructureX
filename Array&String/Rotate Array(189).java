@@ -11,4 +11,24 @@ public void rotate(int[] nums, int k) {
       }
 }
 
-//Optimized approach 
+//Optimized approach : By Reversing the Array 3 times , 1st time full array , next Revrse of first k elemnts then last reverse of elememts after k => n-k elemnts.
+// Using Reverse Function :
+public void rotate(int[] nums, int k) {
+        k = k % nums.length;
+            Reverse(nums, 0, nums.length-1);
+            Reverse(nums, 0, k-1);  
+            Reverse(nums, k, nums.length-1);       
+            }
+    
+    public static void Reverse (int[]arr , int l , int r){
+        while(l<r){
+            int temp = arr[l];
+            arr[l] = arr[r];
+            arr[r]= temp;
+            l++;
+            r--;
+        }
+    }
+
+}
+
