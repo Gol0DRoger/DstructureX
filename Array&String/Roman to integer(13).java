@@ -1,4 +1,4 @@
-//This is my Original Solution: Simply using Conditional statements and While loop , simple and easy with Optimized time.
+//This is my Original Solution: Simply using Conditional statements and While loop , simple and easy with Optimized time (best).
 class Solution {
     public int romanToInt(String s) {
         int total = 0;
@@ -58,3 +58,29 @@ class Solution {
     }
 }
 
+//Less Optimized Approach but little cleaner and Less code - Using Hashmap to store default roman : Integer values and then checking same two characters at a time excluding last character/Index becoz it has to be added no matter what.
+//If current indexed N is smaller than next Indexed N then subtract (-N) becoz after all it has to be subtracted same (Think) and if its greater than next then Add it.
+
+class Solution {
+    public int romanToInt(String s) {
+        int res = 0;
+        Map<Character, Integer> roman = new HashMap<>();
+        roman.put('I', 1);
+        roman.put('V', 5);
+        roman.put('X', 10);
+        roman.put('L', 50);
+        roman.put('C', 100);
+        roman.put('D', 500);
+        roman.put('M', 1000);
+
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (roman.get(s.charAt(i)) < roman.get(s.charAt(i + 1))) {
+                res -= roman.get(s.charAt(i));
+            } else {
+                res += roman.get(s.charAt(i));
+            }
+        }
+
+        return res + roman.get(s.charAt(s.length() - 1));     //last elemnt has to be added no matter What   
+    }
+}
