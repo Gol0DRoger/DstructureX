@@ -1,0 +1,63 @@
+=============================
+Arrays
+=============================
+1. Find the largest (Max) sum subarray ("Kadane’s Algorithm").(**Imp)
+2. Find the missing number in a range from 1 to N.(*Imp)
+3. Remove duplicate elements from an array(sorted).(*Imp)
+4. Move all zeros to the end of an array.(*Imp)
+5. Trapping Rain Water. (*Imp)
+6. Largest Number(LTC.179) | Form the Largest Number (*Imp)
+7. Find the maximum element in an array.
+8. Find the second largest element in an array.
+9. Sort an array using bubble sort.
+10. Merge two sorted arrays into one.
+11. Count the frequency of elements in an array.
+12. Rotate an array to the left by K steps. (**Imp) -> (Rotate Array)
+13. Find the intersection of two arrays.
+14. Implement binary search on a sorted array.
+15. Find the majority element in an array (if any).
+16. Best Time - Stock Buy and Sell (Part 1 and 2 Both).(*Imp)
+17. "2 Sum" and 3 Sum (**Imp).
+18. Median of Two Sorted Arrays.(*Imp)
+19. Bitwise XOR of All Pairings
+
+=============================
+Strings
+=============================
+1. Check if a string is a palindrome.(**Imp)
+2. Reverse a given string /(Reverse Words in a Sentence).(*Imp)
+3. Check if two strings are anagrams.(*Imp)
+4. Find the first non-repeating character in a string.(*Imp)
+5. Longest Substring Without Repeating Characters / with Distinct Characters.(**Imp)
+6. Count vowels and consonants in a string.
+7. Check if brackets are balanced in an expression.
+8. Valid Parentheses.(**Imp)
+9. Longest Common Prefix.(*Imp)
+10. Substring XOR Queries
+
+
+=============================
+Linked Lists
+=============================
+1. Reverse a Linked List (**Imp)
+2. Find the Middle Element of/in a Linked List. (*Imp)
+3. Detect Cycle/Loop in a Linked List. (*Imp)
+4. Remove N/kth Node From End of Linked List.(*Imp)
+5. Merge two sorted linked lists & Merge K sorted linked lists. (*Imp)
+
+=============================
+Math / General / Stack–Queue
+=============================
+1. Implement a queue using two stacks. (*Imp)
+2. Check if a number is prime.
+3. Print the Fibonacci sequence up to N terms.
+4. Find the sum of digits of a number.
+5. Calculate the factorial of a number.
+6. Check if a number is an Armstrong number.
+7. Check if a number is a perfect square.
+8. Find the GCD(Greatest Common Divisor) of two numbers.
+9. Convert a binary number to decimal.
+10. Implement a stack using arrays.
+11. Minimum Moves to Capture The Queen.(*Imp)
+12. Reverse Integer.(*Imp)
+13. Bulb Switcher.(*Imp)
