@@ -36,4 +36,35 @@ for(int nz : citations){
     }
 }
 
-//OPTIMIZED APPROACH:
+//OPTIMIZED APPROACH: Most optimized approach , best optimization - Best Solution.
+https://youtu.be/8KpirgdcXgE?feature=shared
+//explanation:
+/* You create a frequency array arr to count how many papers have each citation count.
+If a citation is more than n, you count it in arr[n].
+You loop from highest to lowest citation count (i = n to 0), summing how many papers have at least i citations.
+When the total papers ≥ i, you return i as the H-Index.
+If no such i is found, you return 0. */
+
+class Solution {
+    public int hIndex(int[] citations) {
+        int n = citations.length;
+        int arr[] = new int[n+1];
+        for(int num : citations){
+            if(num>n){
+                arr[n]++;
+            }
+            else{
+                arr[num]++;
+            }
+        }
+        int count =0;
+        for(int i=n; i>=0; i-- ){
+            count = count+arr[i];
+            if(count >= i){
+                return i;
+            }
+        }
+        return 0;
+    }
+}
+
