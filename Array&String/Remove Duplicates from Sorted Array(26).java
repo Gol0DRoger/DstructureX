@@ -19,6 +19,25 @@ public int removeDuplicates(int[] nums) {
         return k;
     }
 
+//My Latest Bruteforce approach:
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int count =0;
+        for(int i =0; i<nums.length-1; i++){
+int semicount =0;
+for(int j = i+1; j<nums.length; j++){
+if(nums[i]==nums[j] && nums[i]!=Integer.MAX_VALUE){
+    semicount++;
+    nums[i]=Integer.MAX_VALUE;
+}
+}
+count+=semicount;
+        }
+        Arrays.sort(nums);
+        return (nums.length-count);
+    }
+}
+
 //Optimal approach: Without using any extra array and only using two pointers. Moving i only when swaping is about to happen with jth element.
 public int removeDuplicates(int[] nums) {
     int n = nums.length;
