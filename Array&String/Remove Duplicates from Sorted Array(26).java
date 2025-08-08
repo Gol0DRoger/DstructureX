@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=Fm_p9lJ4Z_8
+
 //Bruteforce approach: using a temp variable and i pointer and k counting and one extra array.
 public int removeDuplicates(int[] nums) {
         int temp = nums[0];
@@ -50,3 +52,17 @@ public int removeDuplicates(int[] nums) {
     }
     return i+1;
     }
+//==================================================================================================================//
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int j = 0;
+        if(nums.length==0) return 0;
+        for(int i =1; i<nums.length; i++){
+            if(nums[i]!=nums[j]){
+                j++;
+                nums[j] = nums[i];
+            }
+        }
+        return j+1;
+    }
+}
