@@ -25,3 +25,31 @@ for (int num : nums) {
 return f.toString();
 }
 }
+
+
+
+// OPTIMIZED APPROACH USING CUSTOM SORTING  , Initially I tried arrayList but Array is little more efficient. (5ms time
+)https://algo.monster/liteproblems/179
+class Solution {
+    public String largestNumber(int[] nums) {
+         String[] arr = new String[nums.length];
+    
+
+    for (int i = 0; i < nums.length; i++) {
+        arr[i] = String.valueOf(nums[i]);
+    }
+
+    Arrays.sort(arr, (a, b) -> (b + a).compareTo(a + b));
+
+    if (arr[0].equals("0")) {
+        return "0";
+    }
+
+    StringBuilder sb = new StringBuilder();
+    for (String s : arr) {
+        sb.append(s);
+    }
+    String f = sb.toString();
+    return f;
+}
+}
