@@ -20,3 +20,14 @@ public ListNode middleNode(ListNode head) {
         head = current;
         return head;
     }
+
+//OPTIMIZED SLOW & FAST POINTER APPROACH, SLOW +1 AND FAST +2.
+public ListNode middleNode(ListNode head) {
+       ListNode slow = head;
+       ListNode fast = head;
+       while(fast!= null && fast.next!= null){
+        slow = slow.next;
+        fast = fast.next.next;
+       }
+       return slow;
+    }
