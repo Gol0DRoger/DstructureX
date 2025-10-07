@@ -19,7 +19,6 @@ Arrays
 16. Best Time - Stock Buy and Sell (Part 1 and 2 Both).(*Imp)
 17. "2 Sum" and 3 Sum (**Imp).
 18. Median of Two Sorted Arrays.(*Imp)
-19. Bitwise XOR of All Pairings
 
 =============================
 Strings
@@ -33,7 +32,6 @@ Strings
 7. Check if brackets are balanced in an expression.
 8. Valid Parentheses.(**Imp)
 9. Longest Common Prefix.(*Imp)
-10. Substring XOR Queries
 
 
 =============================
